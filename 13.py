@@ -94,37 +94,18 @@ def delete_todo(todo_id: int, db: Session = Depends(get_db)):
 
 """
 Создание нового элемента Todo
-Method: POST
 URL: http://localhost:8000/todos
-Headers:Content-Type: application/json
 Body (JSON):
 {
    "title": "Sample Todo",
    "description": "This is a sample todo item"
 }
 
-
-Получение элемента Todo по ID
-Method: GET
-URL: http://localhost:8000/todos/{todo_id}
-Headers: (не требуется)
-
-
 Обновление существующего элемента Todo по ID
-Method: PUT
-URL: http://localhost:8000/todos/{todo_id}
-Headers:Content-Type: application/json
 Body (JSON):
 {
     "title": "Updated Todo Title",
     "description": "Updated description",
     "completed": true
 }
-
-
-Удаление элемента Todo по ID
-Method: DELETE
-URL: http://localhost:8000/todos/{todo_id}
-Замените {todo_id} на конкретный идентификатор Todo, который вы хотите удалить.
-Headers: (не требуется)
 """
